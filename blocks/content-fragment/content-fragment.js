@@ -22,7 +22,7 @@ export default function decorate(block) {
   destinationDiv.id = `destination-${slugID.textContent}`;
   block.querySelector('div:last-of-type').replaceWith(destinationDiv);
 
-  const urlEndpoint = cors + aem + "/graphql/execute.json/hsbc/getPageBySlugAndVariation;slug=" + slugID.textContent;
+  const urlEndpoint = cors + aem + "/graphql/execute.json/hsbc/getCreditcardoffers;slug=" + slugID.textContent;
   console.log(urlEndpoint);
 
 // fetch('https://cors.cpilsworth.workers.dev/?target=https://publish-p150634-e1553296.adobeaemcloud.com/graphql/execute.json/nationwide/mortgage-offer-by-slug;slug=offer-1')
@@ -30,7 +30,7 @@ export default function decorate(block) {
  fetch(urlEndpoint)
     .then(response => response.json())
     .then(response => {
-      const {  image, cta, title, description} = response.data.getCreditcardoffers.items[0];
+      const {  image, cta, title, description} = response.data.creditCardCampaignList.items[0];
       const imageURL = `${aem}${image._dynamicUrl}`;
 console.log("CTA");
 console.log(cta);

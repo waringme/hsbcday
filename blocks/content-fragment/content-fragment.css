@@ -1,0 +1,32 @@
+.content-fragment-wrapper{
+  display: flex;
+  height: 100%;
+  position: relative;
+  font-size: 16px;
+  padding-top: 20px;
+} 
+
+
+.section.burgundy.content-fragment-container {
+ background-color: #f60077;
+}
+
+[id^="destination-"] {
+ display: flex;
+}
+
+.destination-image img {
+ width: 600px;
+ max-width: 600px;
+ height: 400px;
+ border-radius: 24px;
+}
+
+.destination-content {
+ padding: 24px;
+ color: rgb(0, 0, 0);  
+}
+
+.destination-content-description {
+ text-align: justify;
+}

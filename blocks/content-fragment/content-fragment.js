@@ -30,7 +30,7 @@ export default function decorate(block) {
  fetch(urlEndpoint)
     .then(response => response.json())
     .then(response => {
-      const {  image, cta, title, description} = response.data.assessmentList.items[0];
+      const {  image, cta, title, description} = response.data.getCreditcardoffers.items[0];
       const imageURL = `${aem}${image._dynamicUrl}`;
 console.log("CTA");
 console.log(cta);

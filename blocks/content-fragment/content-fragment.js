@@ -39,7 +39,9 @@ console.log(description.html);
 
       destinationDiv.innerHTML = `
         <div class='destination-image'>
-          <img src="${imageURL}" alt="ssssssssssss">
+        </div>
+        <div class='destination-image'>
+        <img src="https://s7e3a.scene7.com/is/image/ChristopherPilsworthEMEA002/family-celebration:Desktop" >
         </div>
         <div class='destination-content'>
           <div class='destination-content-title'><h3>${cta}</h3></div>

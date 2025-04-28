@@ -21,7 +21,8 @@ export default function decorate(block) {
   const destinationDiv = document.createElement('div');
   destinationDiv.id = `destination-${slugID.textContent}`;
   block.querySelector('div:last-of-type').replaceWith(destinationDiv);
-
+  console.log("Slug ID");  
+console.log(slugID.textContent);
   const urlEndpoint = cors + aem + "/graphql/execute.json/hsbc/getCreditcardoffers;slug=" + slugID.textContent;
   console.log(urlEndpoint);
 
